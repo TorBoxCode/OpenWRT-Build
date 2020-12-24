@@ -1,0 +1,13 @@
+diff --git a/lede/target/linux/rockchip/image/armv8.mk b/lede/target/linux/rockchip/image/armv8.mk
+index d1523ee2a4..2f09098fe2 100644
+--- a/lede/target/linux/rockchip/image/armv8.mk
++++ b/lede/target/linux/rockchip/image/armv8.mk
+@@ -21,7 +21,7 @@ define Device/friendlyarm_nanopi-r4s
+   DEVICE_MODEL := NanoPi R4S
+   SOC := rk3399
+   IMAGE/sysupgrade.img.gz := boot-common | boot-script nanopi-r4s | pine64-img | gzip | append-metadata
+-  DEVICE_PACKAGES := kmod-r8169
++  DEVICE_PACKAGES := kmod-r8168
+ endef
+ 
+ define Device/friendlyarm_nanopi-r4s-1gb

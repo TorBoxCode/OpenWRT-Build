@@ -1,9 +1,3 @@
-From 04202df5cb497b1934c95211cf43784ef62245a4 Mon Sep 17 00:00:00 2001
-From: Tianling Shen <cnsztl@project-openwrt.eu.org>
-Date: Sat, 19 Dec 2020 12:42:27 +0000
-Subject: [PATCH] rockchip: rk3399: overclock to 2.2/1.8 GHz for NanoPi4 devices
-
-Signed-off-by: Tianling Shen <cnsztl@project-openwrt.eu.org>
 ---
  .../boot/dts/rockchip/rk3399-nanopi4-opp.dtsi | 153 ++++++++++++++++++
  .../boot/dts/rockchip/rk3399-nanopi4.dtsi     |   2 +-

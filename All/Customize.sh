@@ -6,5 +6,5 @@ cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/ne
 cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
 cp -f All/Show_big.LITTLE_CPU_Freq lede/package/lean/autocore/files/arm/sbin/cpuinfo
 cp -f All/RK3399_1.8_2.2_GHz.patch lede/target/linux/rockchip/patches-5.4/RK3399_1.8_2.2_GHz.patch
-git apply All/Rockchip_Driver_R4S.patch
 cp -f All/CONFIG_R4S.ini lede/.config
+git apply All/Rockchip_Driver_R4S.patch

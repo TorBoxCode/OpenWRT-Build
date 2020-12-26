@@ -35,14 +35,6 @@ jobs:
           sed -i 's/#src-git helloworld/src-git helloworld/g' feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-      
-      - name: Custom Packages
-        run: |
-          cd lede/
-          # Add luci-app-diskman
-          git clone --depth=1 https://github.com/SuLingGG/luci-app-diskman
-          mkdir parted
-          cp luci-app-diskman/Parted.Makefile parted/Makefile
           
       - name: Custom Configuration
         run: |

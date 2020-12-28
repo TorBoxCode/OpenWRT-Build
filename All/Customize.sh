@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's/R20.12.12/R20.12.26/g' lede/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R20.12.12/R20.12.28/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/OpenWrt/OpenWRT/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/192.168.1.1/192.168.5.1/g' lede/package/base-files/files/bin/config_generate
 sed -i 's/Nps 内网穿透/nps/g' lede/package/lean/luci-app-nps/po/zh-cn/nps.po

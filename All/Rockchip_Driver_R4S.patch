@@ -1,5 +1,3 @@
-diff --git a/lede/target/linux/rockchip/image/armv8.mk b/lede/target/linux/rockchip/image/armv8.mk
-index d1523ee2a4..2f09098fe2 100644
 --- a/lede/target/linux/rockchip/image/armv8.mk
 +++ b/lede/target/linux/rockchip/image/armv8.mk
 @@ -21,7 +21,7 @@ define Device/friendlyarm_nanopi-r4s

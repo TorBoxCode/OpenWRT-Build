@@ -1,4 +1,4 @@
-name: Lean.OpenWRT-R4S
+name: OpenWRT-R4S
 
 on:
   #schedule:
@@ -51,5 +51,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: Lean.OpenWRT-R4S
+          name: OpenWRT-R4S
           path: lede/bin/

@@ -3,7 +3,6 @@ sed -i 's/R20.12.12/R21.1.12/g' lede/package/lean/default-settings/files/zzz-def
 sed -i 's/OpenWrt/OpenWRT/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/192.168.1.1/192.168.5.1/g' lede/package/base-files/files/bin/config_generate
 sed -i 's/Nps 内网穿透/nps/g' lede/package/lean/luci-app-nps/po/zh-cn/nps.po
-sed -i 's/20201126/20210103/g' lede/package/lean/kcptun/Makefile
 sed -i 's/0.26.8/0.26.9/g' lede/package/lean/npc/Makefile
 cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/nlogo.png
 cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css

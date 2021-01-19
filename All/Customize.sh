@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's/R20.12.12/R21.1.18/g' lede/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R20.12.12/R21.1.20/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/OpenWrt/OpenWRT/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/192.168.1.1/192.168.1.254/g' lede/package/base-files/files/bin/config_generate
 cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/nlogo.png

@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's/R21.1.18/R21.1.28/g' lede/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R21.1.18/R21.1.30/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/OpenWrt/OpenWRT/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/192.168.1.1/192.168.1.254/g' lede/package/base-files/files/bin/config_generate
 sed -i 's/kmod-r8169/kmod-r8168/g' lede/target/linux/rockchip/image/armv8.mk

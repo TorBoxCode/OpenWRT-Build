@@ -7,3 +7,4 @@ cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/ne
 cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
 cp -f All/Enable_1.8_2.2_GHz.patch lede/target/linux/rockchip/patches-5.4/Enable_1.8_2.2_GHz.patch
 cp -f All/Show_CPU_big.LITTLE_FREQ lede/package/lean/autocore/files/arm/sbin/cpuinfo
+git clone https://github.com/KFERMercer/luci-app-dockerman lede/package/lean/luci-app-dockerman

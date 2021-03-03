@@ -8,3 +8,8 @@ cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/ne
 cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
 cp -f All/Enable_1.8_2.2_GHz.patch lede/target/linux/rockchip/patches-5.4/Enable_1.8_2.2_GHz.patch
 cp -f All/Enable_big.LITTLE_freq.info lede/package/lean/autocore/files/arm/sbin/cpuinfo
+rm -rf lede/package/lean/luci-app-diskman
+mkdir -p lede/package/luci-app-diskman && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O lede/package/luci-app-diskman/Makefile
+mkdir -p lede/package/parted && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O lede/package/parted/Makefile

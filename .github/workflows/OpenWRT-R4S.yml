@@ -38,6 +38,7 @@ jobs:
           
       - name: Custom Configuration
         run: |
+          cp -f All/CONFIG.ini lede/.config
           chmod +x All/Customize.sh && sh All/Customize.sh
       
       - name: Build OpenWRT

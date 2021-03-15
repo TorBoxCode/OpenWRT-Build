@@ -7,4 +7,5 @@ cp -f Theme/nlogo.png lede/package/lean/luci-theme-netgear/htdocs/luci-static/ne
 cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.4/Enable_CPUOP.patch
 cp -f All/Enable_big.LITTLE_DU.info lede/package/lean/autocore/files/arm/sbin/cpuinfo
+cp -f All/01_leds lede/target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
 git apply All/Enable_Swap_Wan_Lan.diff

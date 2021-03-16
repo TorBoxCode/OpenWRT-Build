@@ -56,4 +56,5 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: OpenWRT-R4S
-          path: lede/bin/targets/rockchip/armv8/
+          path: lede/bin/
+          #targets/rockchip/armv8/

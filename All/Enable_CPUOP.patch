@@ -9,7 +9,7 @@ index d6f1095ab..b4a830d5e 100644
 +		opp06 {
 +			opp-hz = /bits/ 64 <1512000000>;
 +			opp-microvolt = <1200000>;
-+		};        
++		};
 };
  
  	cluster1_opp: opp-table1 {
@@ -20,7 +20,7 @@ index d6f1095ab..b4a830d5e 100644
 +		opp08 {
 +			opp-hz = /bits/ 64 <2016000000>;
 +			opp-microvolt = <1300000>;
-+		};         
++		};
  	};
  
  	gpu_opp_table: opp-table2 {

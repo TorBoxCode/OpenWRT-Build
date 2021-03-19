@@ -13,7 +13,7 @@ index d6f1095ab..b4a830d5e 100644
 +		opp07 {
 +			opp-hz = /bits/ 64 <1608000000>;
 +			opp-microvolt = <1250000>;
-+		};      
++		};
 };
  
  	cluster1_opp: opp-table1 {

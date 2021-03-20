@@ -1,6 +1,6 @@
 --- /dev/null
 +++ b/arch/arm64/boot/dts/rockchip/rk3399-nanopi4-opp.dtsi
-@@ -0,0 +1,148 @@
+@@ -0,0 +1,140 @@
 +/ {
 +	cluster0_opp: opp-table0 {
 +		compatible = "operating-points-v2";
@@ -38,10 +38,6 @@
 + 		opp07 {
 +			opp-hz = /bits/ 64 <1608000000>;
 +			opp-microvolt = <1250000>;
-+		};
-+		opp08 {
-+			opp-hz = /bits/ 64 <1800000000>;
-+			opp-microvolt = <1300000>;
 +		};
 +	};
 +
@@ -85,10 +81,6 @@
 +		opp08 {
 +			opp-hz = /bits/ 64 <2016000000>;
 +			opp-microvolt = <1350000>;
-+		};
-+		opp09 {
-+			opp-hz = /bits/ 64 <2208000000>;
-+			opp-microvolt = <1400000>;
 +		};
 +	};
 +

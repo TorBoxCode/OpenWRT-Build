@@ -7,3 +7,5 @@ cp -f Theme/style.css lede/package/lean/luci-theme-netgear/htdocs/luci-static/ne
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.4/Enable_CPUOP.patch
 cp -f All/Enable_big.LITTLE_DU.info lede/package/lean/autocore/files/arm/sbin/cpuinfo
 git clone https://github.com/MapesxGM/luci-app-tencentddns lede/package/lean/luci-app-tencentddns
+rm -rf lede/package/lean/luci-app-nps/
+git clone https://github.com/MapesxGM/luci-app-nps lede/package/lean/luci-app-nps

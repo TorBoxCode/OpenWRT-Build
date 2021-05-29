@@ -31,8 +31,12 @@ jobs:
       - name: Get Source Code
         run: |
           git clone https://github.com/coolsnowwolf/lede.git
+          git clone https://github.com/MapesxGM/luci-app-eqos lede/package/lean/luci-app-eqos
+          git clone https://github.com/MapesxGM/luci-app-tencentddns lede/package/lean/luci-app-tencentddns
           cd lede/
           sed -i 's/#src-git helloworld/src-git helloworld/g' feeds.conf.default
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
           
       - name: Custom Configuration
         run: |
@@ -42,8 +46,6 @@ jobs:
       - name: Build OpenWRT
         run: |
           cd lede/
-          ./scripts/feeds update -a
-          ./scripts/feeds install -a
           make defconfig
           make download -j8
           find dl -size -1024c -exec rm -f {} \;

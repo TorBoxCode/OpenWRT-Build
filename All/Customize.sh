@@ -9,3 +9,4 @@ rm -rf lede/target/linux/rockchip/patches-5.10/992-rockchip-rk3399-overclock-to-
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.4/Enable_CPUOP.patch
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.10/Enable_CPUOP.patch
 cp -f All/Enable_big.LITTLE_DU.info lede/package/lean/autocore/files/arm/sbin/cpuinfo
+sed -i 's/5.4/5.10/g' lede/target/linux/rockchip/Makefile

@@ -31,10 +31,10 @@ jobs:
       - name: Get Source Code
         run: |
           git clone https://github.com/coolsnowwolf/lede.git
+          git clone https://github.com/fw876/helloworld lede/package/lean/
           git clone https://github.com/MapesxGM/luci-app-eqos lede/package/lean/luci-app-eqos
           git clone https://github.com/MapesxGM/luci-app-tencentddns lede/package/lean/luci-app-tencentddns
           cd lede/
-          sed -i 's/#src-git helloworld/src-git helloworld/g' feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           

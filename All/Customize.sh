@@ -10,4 +10,4 @@ cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.10/Enable_CPUO
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.15/Enable_CPUOP.patch
 cp -f Theme/nlogo.png lede/feeds/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/nlogo.png
 cp -f Theme/style.css lede/feeds/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
-#sed -i 's/5.15/5.10/g' lede/target/linux/rockchip/Makefile
+sed -i 's/5.15/5.10/g' lede/target/linux/rockchip/Makefile

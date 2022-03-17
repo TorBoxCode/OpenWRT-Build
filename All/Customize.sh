@@ -8,6 +8,6 @@ rm -rf lede/target/linux/rockchip/patches-5.15/992-rockchip-rk3399-overclock-to-
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.4/Enable_CPUOP.patch
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.10/Enable_CPUOP.patch
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.15/Enable_CPUOP.patch
-cp -f Theme/nlogo.png lede/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/nlogo.png
-cp -f Theme/style.css lede/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
+cp -f Theme/nlogo.png lede/feeds/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/nlogo.png
+cp -f Theme/style.css lede/feeds/luci/themes/luci-theme-netgear/htdocs/luci-static/netgear/css/style.css
 #sed -i 's/5.15/5.10/g' lede/target/linux/rockchip/Makefile

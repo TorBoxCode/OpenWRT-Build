@@ -11,4 +11,4 @@ cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.4/Enable_CPUOP
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.10/Enable_CPUOP.patch
 cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.15/Enable_CPUOP.patch
 #sed -i 's/5.15/5.4/g' lede/target/linux/rockchip/Makefile
-sed -i 's/PADDING=1/PADDING=0/g' lede/target/linux/rockchip/image/Makefile
+sed -i 's/PADDING=1//g' lede/target/linux/rockchip/image/Makefile

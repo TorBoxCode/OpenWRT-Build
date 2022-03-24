@@ -11,4 +11,4 @@ cp -f Theme/style.css lede/feeds/luci/themes/luci-theme-netgear/htdocs/luci-stat
 #cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.10/Enable_CPUOP.patch
 #cp -f All/Enable_CPUOP.patch lede/target/linux/rockchip/patches-5.15/Enable_CPUOP.patch
 sed -i 's/PADDING=1//g' lede/target/linux/rockchip/image/Makefile
-#sed -i 's/5.15/5.10/g' lede/target/linux/rockchip/Makefile
+sed -i 's/5.15/5.10/g' lede/target/linux/rockchip/Makefile

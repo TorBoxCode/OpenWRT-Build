@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's/R22.5.5/R22.5.1/g' lede/package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.6.16/R22.6.23/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/OpenWrt/OpenWRT/g' lede/package/lean/default-settings/files/zzz-default-settings
 sed -i 's/192.168.1.1/10.0.0.1/g' lede/package/base-files/files/bin/config_generate
 sed -i 's/PADDING=1//g' lede/target/linux/rockchip/image/Makefile

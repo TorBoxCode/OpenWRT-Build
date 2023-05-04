@@ -32,10 +32,10 @@ jobs:
           git clone https://github.com/coolsnowwolf/lede.git
           git clone https://github.com/TorBoxCode/luci-app-eqos lede/package/lean/luci-app-eqos
           git clone https://github.com/TorBoxCode/luci-app-tencentddns lede/package/lean/luci-app-tencentddns
-          git clone https://github.com/vernesong/OpenClash lede/package/lean/OpenClash
+          #git clone https://github.com/vernesong/OpenClash lede/package/lean/OpenClash
           git clone https://github.com/frainzy1477/luci-app-trojan lede/package/lean/luci-app-trojan
           git clone https://github.com/frainzy1477/luci-app-clash lede/package/lean/luci-app-clash
-          sed -i '$a\src-git helloworld https://github.com/fw876/helloworld' lede/feeds.conf.default
+          #sed -i '$a\src-git helloworld https://github.com/fw876/helloworld' lede/feeds.conf.default
           cd lede/
           ./scripts/feeds update -a
           ./scripts/feeds install -a

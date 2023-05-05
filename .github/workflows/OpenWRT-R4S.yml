@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build OpenWRT
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-23.04
 
     steps:
       - name: Checkout
@@ -55,7 +55,7 @@ jobs:
           make defconfig
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
-          make -j$(nproc) || make dirclean -j1 V=s
+          make -j$(nproc) || make -j1 V=s
       
       - name: Prepare Artifact
         run: find lede/bin/targets/ -type d -name "packages" | xargs rm -rf {}

@@ -53,7 +53,6 @@ jobs:
           cd lede/
           make defconfig
           make download -j8
-          find dl -size -1024c -exec rm -f {} \;
           make -j$(nproc) || make -j1 V=s
       
       - name: Prepare Artifact
@@ -63,4 +62,5 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: OpenWRT-R4S
-          path: lede/bin/targets/rockchip/armv8/
+          path: lede/bin/targets/
+          #rockchip/armv8/

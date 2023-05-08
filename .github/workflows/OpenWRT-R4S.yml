@@ -33,7 +33,7 @@ jobs:
           
       - name: Get Source Code
         run: |
-          git https://github.com/Lienol/openwrt.git
+          git clone -b master --single-branch https://github.com/Lienol/openwrt openwrt
           git clone https://github.com/TorBoxCode/luci-app-eqos openwrt/package/luci-app-eqos
           git clone https://github.com/TorBoxCode/luci-app-tencentddns openwrt/package/luci-app-tencentddns
           git clone https://github.com/frainzy1477/luci-app-trojan openwrt/package/luci-app-trojan

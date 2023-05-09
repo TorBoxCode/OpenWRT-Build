@@ -30,10 +30,10 @@ jobs:
       - name: Get Source Code
         run: |
           git clone https://github.com/coolsnowwolf/lede.git
-          git clone https://github.com/TorBoxCode/luci-app-eqos openwrt/package/luci-app-eqos
-          git clone https://github.com/TorBoxCode/luci-app-tencentddns openwrt/package/luci-app-tencentddns
-          git clone https://github.com/frainzy1477/luci-app-trojan openwrt/package/luci-app-trojan
-          git clone https://github.com/frainzy1477/luci-app-clash openwrt/package/luci-app-clash
+          git clone https://github.com/TorBoxCode/luci-app-eqos lede/package/luci-app-eqos
+          git clone https://github.com/TorBoxCode/luci-app-tencentddns lede/package/luci-app-tencentddns
+          git clone https://github.com/frainzy1477/luci-app-trojan lede/package/luci-app-trojan
+          git clone https://github.com/frainzy1477/luci-app-clash lede/package/luci-app-clash
           cd lede/
           ./scripts/feeds clean
           ./scripts/feeds update -a

@@ -29,35 +29,35 @@ jobs:
           
       - name: Get Source Code
         run: |
-          git clone -b master --single-branch https://github.com/Lienol/openwrt openwrt
+          git clone https://github.com/coolsnowwolf/lede.git
           git clone https://github.com/TorBoxCode/luci-app-eqos openwrt/package/luci-app-eqos
           git clone https://github.com/TorBoxCode/luci-app-tencentddns openwrt/package/luci-app-tencentddns
           git clone https://github.com/frainzy1477/luci-app-trojan openwrt/package/luci-app-trojan
           git clone https://github.com/frainzy1477/luci-app-clash openwrt/package/luci-app-clash
-          cd openwrt/
+          cd lede/
           ./scripts/feeds clean
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           
       - name: Custom Configuration
         run: |
-          cp -f All/CONFIG_R4S.ini openwrt/.config
-          #chmod +x All/Customize.sh && sh All/Customize.sh
+          cp -f All/CONFIG_R4S.ini lede/.config
+          chmod +x All/Customize.sh && sh All/Customize.sh
       
       - name: Build OpenWRT
         run: |
-          cd openwrt/
+          cd lede/
           make defconfig
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
           make -j$(nproc) || make -j1 V=s
       
       - name: Prepare Artifact
-        run: find openwrt/bin/targets/ -type d -name "packages" | xargs rm -rf {}
+        run: find lede/bin/targets/ -type d -name "packages" | xargs rm -rf {}
           
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
           name: OpenWRT-R4S
-          path: openwrt/bin/targets/
+          path: lede/bin/targets/
           #rockchip/armv8/

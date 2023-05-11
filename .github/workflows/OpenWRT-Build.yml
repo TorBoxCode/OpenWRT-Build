@@ -1,4 +1,4 @@
-name: OpenWRT-R4S
+name: OpenWRT-Build
 
 on:
   #schedule:
